@@ -1,0 +1,141 @@
+---
+title: SotaTek Services Overview
+description: Explore SotaTek's core services in software development, blockchain solutions, and IT consulting designed to drive business success. Understand how each service addresses specific digital transformation needs.
+---
+
+## Overview
+
+SotaTek delivers innovative IT solutions to accelerate your digital transformation. With offices in Sydney and Vietnam, you access expert teams specializing in custom software development, blockchain implementation, and strategic IT consulting. These services empower global businesses to build scalable applications, secure decentralized systems, and optimize operations for long-term success.
+
+<Columns cols={3}>
+  <Card title="Custom Software" icon="code" href="#custom-software">
+    Develop tailored applications that scale with your business needs.
+  </Card>
+  <Card title="Blockchain Solutions" icon="network" href="#blockchain">
+    Implement secure, transparent systems for data integrity and automation.
+  </Card>
+  <Card title="IT Consulting" icon="settings" href="#consulting">
+    Get expert guidance to align technology with your strategic goals.
+  </Card>
+</Columns>
+
+## Custom Software Development
+
+Build applications that fit your exact requirements. SotaTek follows an agile process to deliver high-quality software quickly.
+
+<Steps>
+  <Step title="Discovery" icon="search">
+    Analyze your needs and define project scope.
+  </Step>
+  <Step title="Design & Development" icon="code">
+    Create wireframes, architecture, and implement features.
+  </Step>
+  <Step title="Testing & Deployment" icon="check-circle">
+    Run comprehensive tests and deploy to production.
+  </Step>
+  <Step title="Maintenance" icon="shield">
+    Provide ongoing support and updates.
+  </Step>
+</Steps>
+
+<CodeGroup tabs="Node.js,Python">
+  ```javascript
+  // Example: User authentication endpoint
+  const express = require('express');
+  const app = express();
+  app.use(express.json());
+
+  app.post('/api/login', (req, res) => {
+    const { email, password } = req.body;
+    // Validate credentials
+    if (email === 'user@sotatek.com' && password === 'securepass') {
+      res.json({ token: 'your-jwt-token-here', user: { id: 1, email } });
+    } else {
+      res.status(401).json({ error: 'Invalid credentials' });
+    }
+  });
+
+  app.listen(3000, () => console.log('Server running on port 3000'));
+  ```
+  ```python
+  # Example: User authentication endpoint
+  from flask import Flask, request, jsonify
+
+  app = Flask(__name__)
+
+  @app.route('/api/login', methods=['POST'])
+  def login():
+      data = request.json
+      email, password = data.get('email'), data.get('password')
+      if email == 'user@sotatek.com' and password == 'securepass':
+          return jsonify({'token': 'your-jwt-token-here', 'user': {'id': 1, 'email': email}})
+      return jsonify({'error': 'Invalid credentials'}), 401
+
+  if __name__ == '__main__':
+      app.run(port=3000)
+  ```
+</CodeGroup>
+
+<Callout kind="tip">
+  Start with a free consultation to map your software needs to SotaTek's agile methodology.
+</Callout>
+
+## Blockchain Solutions
+
+Secure your applications with blockchain for tamper-proof data and smart contracts. SotaTek implements solutions on Ethereum, Polygon, and custom chains.
+
+<Tabs>
+  <Tab title="Smart Contract Deployment" icon="code">
+    Deploy contracts for automated transactions.
+    
+````solidity
+// Simple token contract example
+pragma solidity ^0.8.0;
+
+contract SotaToken {
+    mapping(address => uint256) public balances;
+    uint256 public totalSupply = 1000000 * 10**18;
+
+    constructor() {
+        balances[msg.sender] = totalSupply;
+    }
+
+    function transfer(address to, uint256 amount) public {
+        require(balances[msg.sender] >= amount, "Insufficient balance");
+        balances[msg.sender] -= amount;
+        balances[to] += amount;
+    }
+}
+````
+  </Tab>
+  <Tab title="Supply Chain Tracking" icon="package">
+    Track assets transparently across your supply chain.
+    
+    Use blockchain to log events like shipment and delivery, ensuring auditability.
+  </Tab>
+</Tabs>
+
+## IT Consulting
+
+Optimize your IT infrastructure with SotaTek's experts. You receive strategy roadmaps, cloud migrations, and performance audits tailored to your operations.
+
+<Expandable title="Consulting Process" default-open="true">
+  1. Assess current systems.
+  2. Recommend optimizations.
+  3. Implement changes with minimal downtime.
+  4. Monitor and iterate.
+</Expandable>
+
+## Tailored Solutions for Global Businesses
+
+SotaTek adapts services to your industry and scale. Whether you operate from Sydney or expand via Vietnam's talent pool, expect solutions that support multi-region compliance and growth.
+
+| Service | Key Benefit | Ideal For |
+|---------|-------------|-----------|
+| Custom Software | Scalable apps | Enterprises needing bespoke tools |
+| Blockchain | Secure decentralization | Finance and supply chain sectors |
+| IT Consulting | Strategic alignment | Businesses in digital transition |
+
+<Callout kind="success">
+  Contact SotaTek today to discuss how these services transform your business.
+</Callout>

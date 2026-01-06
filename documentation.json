@@ -1,0 +1,128 @@
+{
+  "name": "Sotatek",
+  "initialRoute": "introduction",
+  "colors": {
+    "light": {
+      "brand": "#046ce4"
+    },
+    "dark": {
+      "brand": "#4391eb"
+    }
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "icon": "book",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "icon": "rocket",
+            "pages": [
+              {
+                "title": "Introduction",
+                "path": "introduction",
+                "icon": "home"
+              },
+              {
+                "title": "Quickstart",
+                "path": "quickstart",
+                "icon": "zap"
+              }
+            ]
+          },
+          {
+            "group": "Services",
+            "icon": "layers",
+            "pages": [
+              {
+                "title": "Our Services",
+                "path": "services",
+                "icon": "file-text"
+              }
+            ]
+          },
+          {
+            "group": "Case Studies",
+            "icon": "folder",
+            "pages": [
+              {
+                "title": "Case Studies",
+                "path": "case-studies",
+                "icon": "file-text"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "icon": "code",
+        "groups": [
+          {
+            "group": "Endpoints",
+            "openapi": "openapi.yaml"
+          }
+        ]
+      },
+      {
+        "tab": "Help Center",
+        "icon": "help-circle",
+        "pages": [
+          {
+            "title": "Help Center",
+            "path": "help-center",
+            "icon": "home"
+          },
+          {
+            "group": "FAQs",
+            "icon": "help-circle",
+            "expandable": false,
+            "pages": [
+              {
+                "title": "What Services Does SotaTek Offer?",
+                "path": "help-center/faq/what-services-does-sotatek-offer",
+                "icon": "file-text"
+              }
+            ]
+          },
+          {
+            "group": "Troubleshooting",
+            "icon": "alert-circle",
+            "expandable": false,
+            "pages": [
+              {
+                "title": "Cannot Connect With Project Team",
+                "path": "help-center/troubleshooting/cannot-connect-with-project-team",
+                "icon": "file-text"
+              }
+            ]
+          },
+          {
+            "group": "Guides",
+            "icon": "book-open",
+            "expandable": false,
+            "pages": [
+              {
+                "title": "Kick Off Your Development Project",
+                "path": "help-center/guides/kick-off-your-development-project",
+                "icon": "file-text"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Changelog",
+        "icon": "clock",
+        "pages": [
+          {
+            "title": "Release History",
+            "path": "changelog",
+            "icon": "history"
+          }
+        ]
+      }
+    ]
+  }
+}
