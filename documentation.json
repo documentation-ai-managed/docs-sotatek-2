@@ -47,6 +47,10 @@
             "icon": "folder",
             "pages": [
               {
+                "title": "On boarding",
+                "path": "on-boarding"
+              },
+              {
                 "title": "Case Studies",
                 "path": "case-studies",
                 "icon": "file-text"
