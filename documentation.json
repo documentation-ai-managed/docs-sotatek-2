@@ -16,16 +16,16 @@
         "icon": "book",
         "groups": [
           {
-            "group": "Getting Started",
+            "group": "Bắt đầu ! ",
             "icon": "rocket",
             "pages": [
               {
-                "title": "Introduction",
+                "title": "Tổng quan",
                 "path": "introduction",
                 "icon": "home"
               },
               {
-                "title": "Quickstart",
+                "title": "Đăng ký & Đăng nhập",
                 "path": "quickstart",
                 "icon": "zap"
               }
