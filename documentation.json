@@ -12,7 +12,7 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Documentation",
+        "tab": "Hướng dẫn sử dụng",
         "icon": "book",
         "groups": [
           {
@@ -60,17 +60,7 @@
         ]
       },
       {
-        "tab": "API Reference",
-        "icon": "code",
-        "groups": [
-          {
-            "group": "Endpoints",
-            "openapi": "openapi.yaml"
-          }
-        ]
-      },
-      {
-        "tab": "Help Center",
+        "tab": "Trợ giúp",
         "icon": "help-circle",
         "pages": [
           {
@@ -117,7 +107,7 @@
         ]
       },
       {
-        "tab": "Changelog",
+        "tab": "Cập nhật tính năng",
         "icon": "clock",
         "pages": [
           {
